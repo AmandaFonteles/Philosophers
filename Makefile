@@ -6,7 +6,7 @@
 #    By: afontele <afontele@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/03 20:13:46 by afontele          #+#    #+#              #
-#    Updated: 2025/08/04 18:41:30 by afontele         ###   ########.fr        #
+#    Updated: 2026/09/15 18:56:53 by afontele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,8 @@ SRCS = src/main.c \
 	   src/actions.c \
 	   src/threads.c \
 	   src/utils.c
+
+$(OBJDIR)/%.o: src/%.c philo.h
 
 OBJS = $(SRCS:src/%.c=$(OBJDIR)/%.o)
 
